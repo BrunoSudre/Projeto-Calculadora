@@ -21,16 +21,40 @@ namespace Calculadora
         public Form1()
         {
             InitializeComponent();
+            btnSoma.Enabled = false;
+            btnLimpar.Enabled = false;
+            btnSub.Enabled = false;
+            btnMult.Enabled = false;
+            btnDiv.Enabled = false;
+            btnSinal.Enabled = false;
+            btnPonto.Enabled = false;
+            btnResultado.Enabled = false;
         }
 
         private void btnNumber_Click(object sender, EventArgs e)
         {
-            lblTela.Text = "";
             lblTela.Text = lblTela.Text + (sender as Button).Text;
+
+            btnLimpar.Enabled = true;
+            btnSoma.Enabled = true;
+            btnSub.Enabled = true;
+            btnMult.Enabled = true;
+            btnDiv.Enabled = true;
+            btnPonto.Enabled = true;
+            btnSinal.Enabled = true;
+            btnResultado.Enabled = true;
         }
 
         private void btnOperador_Click(object sender, EventArgs e)
         {
+            btnSoma.Enabled = false;
+            btnSub.Enabled = false;
+            btnMult.Enabled = false;
+            btnDiv.Enabled = false;
+            btnSinal.Enabled = false;
+            btnPonto.Enabled = false;
+            btnResultado.Enabled = false;
+            
             this.primeiroValor = double.Parse(lblTela.Text);
             this.operador = (sender as Button).Text;
             //lblTela.Clear();
@@ -39,9 +63,16 @@ namespace Calculadora
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            lblTela.Text = "0";
+            lblTela.Text = "";
             this.primeiroValor = 0;
             this.segundoValor = 0;
+            btnSoma.Enabled = false;
+            btnSub.Enabled = false;
+            btnMult.Enabled = false;
+            btnDiv.Enabled = false;
+            btnPonto.Enabled = false;
+            btnSinal.Enabled = false;
+            btnResultado.Enabled = false;
         }
 
         private void btnSinal_Click(object sender, EventArgs e)
@@ -59,7 +90,20 @@ namespace Calculadora
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
+        getSegundoValor:
             this.segundoValor = double.Parse(lblTela.Text);
+
+            if (this.operador == "/" && this.segundoValor == 0)
+            {
+                MessageBox.Show("Não é permitido divisão por 0! Digite outro valor.");
+                goto getSegundoValor;
+            }
+
+            if (this.segundoValor.ToString() == null)
+            {
+                MessageBox.Show("Digite o segundo valor!");
+                goto getSegundoValor; 
+            }
 
             switch (this.operador)
             {
@@ -76,19 +120,16 @@ namespace Calculadora
                     break;
 
                 case "/":
-                    if (this.segundoValor == 0)
-                    {
-                        MessageBox.Show("Não é permitido divisão por 0! Digite outro valor.");
-                        Application.Exit();
-                    } else
-                    {
-                        this.obj = new Divisao();
-                    }
-               
+                    this.obj = new Divisao();               
                     break;
             }
 
             lblTela.Text = this.obj.calcular(this.primeiroValor, this.segundoValor).ToString();
+        }
+
+        private void btnPonto_Click(object sender, EventArgs e)
+        {
+            lblTela.Text = lblTela.Text + ",";
         }
     }
 }
