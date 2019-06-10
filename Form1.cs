@@ -124,11 +124,6 @@ namespace Calculadora
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void desativarBotoes()
         {
             btnSoma.Enabled = false;
@@ -138,6 +133,9 @@ namespace Calculadora
             btnPonto.Enabled = false;
             btnSinal.Enabled = false;
             btnResultado.Enabled = false;
+            btnVoltar.Enabled = false;
+            btnQuadrado.Enabled = false;
+            btnRaiz.Enabled = false;
         }
         private void ativarBotoes()
         {
@@ -148,6 +146,27 @@ namespace Calculadora
             btnPonto.Enabled = true;
             btnSinal.Enabled = true;
             btnResultado.Enabled = true;
+            btnVoltar.Enabled = true;
+            btnQuadrado.Enabled = true;
+            btnRaiz.Enabled = true;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            if (txbTela.Text != "")
+            {
+                txbTela.Text = txbTela.Text.Substring(0, txbTela.TextLength - 1);
+            }
+        }
+
+        private void btnQuadrado_Click(object sender, EventArgs e)
+        {
+            txbTela.Text = Math.Pow(double.Parse(txbTela.Text), 2).ToString();
+        }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            txbTela.Text = Math.Sqrt(double.Parse(txbTela.Text)).ToString();
         }
     }
 }

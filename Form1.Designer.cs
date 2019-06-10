@@ -48,6 +48,9 @@
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnMult = new System.Windows.Forms.Button();
             this.txbTela = new System.Windows.Forms.TextBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnQuadrado = new System.Windows.Forms.Button();
+            this.btnRaiz = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSoma
@@ -55,7 +58,7 @@
             this.btnSoma.BackColor = System.Drawing.Color.IndianRed;
             this.btnSoma.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoma.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSoma.Location = new System.Drawing.Point(10, 61);
+            this.btnSoma.Location = new System.Drawing.Point(190, 61);
             this.btnSoma.Margin = new System.Windows.Forms.Padding(1);
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(58, 46);
@@ -69,12 +72,12 @@
             this.btnLimpar.BackColor = System.Drawing.Color.IndianRed;
             this.btnLimpar.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpar.Location = new System.Drawing.Point(190, 109);
+            this.btnLimpar.Location = new System.Drawing.Point(10, 61);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(1);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(58, 46);
+            this.btnLimpar.Size = new System.Drawing.Size(118, 46);
             this.btnLimpar.TabIndex = 18;
-            this.btnLimpar.Text = "CE";
+            this.btnLimpar.Text = "C";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
@@ -83,7 +86,7 @@
             this.btnSinal.BackColor = System.Drawing.Color.IndianRed;
             this.btnSinal.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSinal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSinal.Location = new System.Drawing.Point(190, 157);
+            this.btnSinal.Location = new System.Drawing.Point(190, 252);
             this.btnSinal.Margin = new System.Windows.Forms.Padding(1);
             this.btnSinal.Name = "btnSinal";
             this.btnSinal.Size = new System.Drawing.Size(58, 46);
@@ -123,10 +126,10 @@
             this.btnResultado.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnResultado.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnResultado.Location = new System.Drawing.Point(190, 205);
+            this.btnResultado.Location = new System.Drawing.Point(250, 156);
             this.btnResultado.Margin = new System.Windows.Forms.Padding(1);
             this.btnResultado.Name = "btnResultado";
-            this.btnResultado.Size = new System.Drawing.Size(58, 94);
+            this.btnResultado.Size = new System.Drawing.Size(58, 142);
             this.btnResultado.TabIndex = 22;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = false;
@@ -254,7 +257,7 @@
             this.btnSub.BackColor = System.Drawing.Color.IndianRed;
             this.btnSub.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSub.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSub.Location = new System.Drawing.Point(70, 61);
+            this.btnSub.Location = new System.Drawing.Point(190, 108);
             this.btnSub.Margin = new System.Windows.Forms.Padding(1);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(58, 46);
@@ -268,7 +271,7 @@
             this.btnDiv.BackColor = System.Drawing.Color.IndianRed;
             this.btnDiv.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiv.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDiv.Location = new System.Drawing.Point(190, 61);
+            this.btnDiv.Location = new System.Drawing.Point(190, 204);
             this.btnDiv.Margin = new System.Windows.Forms.Padding(1);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(58, 46);
@@ -282,7 +285,7 @@
             this.btnMult.BackColor = System.Drawing.Color.IndianRed;
             this.btnMult.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnMult.Location = new System.Drawing.Point(130, 61);
+            this.btnMult.Location = new System.Drawing.Point(190, 156);
             this.btnMult.Margin = new System.Windows.Forms.Padding(1);
             this.btnMult.Name = "btnMult";
             this.btnMult.Size = new System.Drawing.Size(58, 46);
@@ -302,15 +305,60 @@
             this.txbTela.Name = "txbTela";
             this.txbTela.ReadOnly = true;
             this.txbTela.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txbTela.Size = new System.Drawing.Size(238, 50);
+            this.txbTela.Size = new System.Drawing.Size(298, 50);
             this.txbTela.TabIndex = 36;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.IndianRed;
+            this.btnVoltar.Font = new System.Drawing.Font("Lucida Console", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnVoltar.Location = new System.Drawing.Point(130, 61);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(1);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(58, 46);
+            this.btnVoltar.TabIndex = 37;
+            this.btnVoltar.Text = "←";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnQuadrado
+            // 
+            this.btnQuadrado.BackColor = System.Drawing.Color.IndianRed;
+            this.btnQuadrado.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuadrado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnQuadrado.Location = new System.Drawing.Point(250, 61);
+            this.btnQuadrado.Margin = new System.Windows.Forms.Padding(1);
+            this.btnQuadrado.Name = "btnQuadrado";
+            this.btnQuadrado.Size = new System.Drawing.Size(58, 46);
+            this.btnQuadrado.TabIndex = 38;
+            this.btnQuadrado.Text = "x²";
+            this.btnQuadrado.UseVisualStyleBackColor = false;
+            this.btnQuadrado.Click += new System.EventHandler(this.btnQuadrado_Click);
+            // 
+            // btnRaiz
+            // 
+            this.btnRaiz.BackColor = System.Drawing.Color.IndianRed;
+            this.btnRaiz.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRaiz.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRaiz.Location = new System.Drawing.Point(250, 108);
+            this.btnRaiz.Margin = new System.Windows.Forms.Padding(1);
+            this.btnRaiz.Name = "btnRaiz";
+            this.btnRaiz.Size = new System.Drawing.Size(58, 46);
+            this.btnRaiz.TabIndex = 39;
+            this.btnRaiz.Text = "²√";
+            this.btnRaiz.UseVisualStyleBackColor = false;
+            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
-            this.ClientSize = new System.Drawing.Size(258, 306);
+            this.ClientSize = new System.Drawing.Size(317, 304);
+            this.Controls.Add(this.btnRaiz);
+            this.Controls.Add(this.btnQuadrado);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txbTela);
             this.Controls.Add(this.btnMult);
             this.Controls.Add(this.btnDiv);
@@ -336,7 +384,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,6 +410,9 @@
         private System.Windows.Forms.Button btnDiv;
         private System.Windows.Forms.Button btnMult;
         private System.Windows.Forms.TextBox txbTela;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnQuadrado;
+        private System.Windows.Forms.Button btnRaiz;
     }
 }
 
