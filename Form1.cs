@@ -155,6 +155,10 @@ namespace Calculadora
         {
             if (txbTela.Text != "")
             {
+                if (txbTela.TextLength == 1)
+                {
+                    desativarBotoes();
+                }
                 txbTela.Text = txbTela.Text.Substring(0, txbTela.TextLength - 1);
             }
         }

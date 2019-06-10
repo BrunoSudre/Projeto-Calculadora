@@ -97,7 +97,7 @@
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn7.BackColor = System.Drawing.Color.SteelBlue;
             this.btn7.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(10, 109);
             this.btn7.Margin = new System.Windows.Forms.Padding(1);
@@ -110,7 +110,7 @@
             // 
             // btn8
             // 
-            this.btn8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn8.BackColor = System.Drawing.Color.SteelBlue;
             this.btn8.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.Location = new System.Drawing.Point(70, 109);
             this.btn8.Margin = new System.Windows.Forms.Padding(1);
@@ -123,9 +123,9 @@
             // 
             // btnResultado
             // 
-            this.btnResultado.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnResultado.BackColor = System.Drawing.Color.DarkCyan;
             this.btnResultado.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnResultado.ForeColor = System.Drawing.SystemColors.Control;
             this.btnResultado.Location = new System.Drawing.Point(250, 156);
             this.btnResultado.Margin = new System.Windows.Forms.Padding(1);
             this.btnResultado.Name = "btnResultado";
@@ -137,7 +137,7 @@
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn3.BackColor = System.Drawing.Color.SteelBlue;
             this.btn3.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(130, 204);
             this.btn3.Margin = new System.Windows.Forms.Padding(1);
@@ -150,7 +150,7 @@
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn2.BackColor = System.Drawing.Color.SteelBlue;
             this.btn2.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(70, 205);
             this.btn2.Margin = new System.Windows.Forms.Padding(1);
@@ -163,7 +163,7 @@
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn1.BackColor = System.Drawing.Color.SteelBlue;
             this.btn1.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(10, 205);
             this.btn1.Margin = new System.Windows.Forms.Padding(1);
@@ -176,7 +176,7 @@
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn6.BackColor = System.Drawing.Color.SteelBlue;
             this.btn6.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.Location = new System.Drawing.Point(130, 157);
             this.btn6.Margin = new System.Windows.Forms.Padding(1);
@@ -189,7 +189,7 @@
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn5.BackColor = System.Drawing.Color.SteelBlue;
             this.btn5.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.Location = new System.Drawing.Point(70, 157);
             this.btn5.Margin = new System.Windows.Forms.Padding(1);
@@ -202,7 +202,7 @@
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn4.BackColor = System.Drawing.Color.SteelBlue;
             this.btn4.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(10, 157);
             this.btn4.Margin = new System.Windows.Forms.Padding(1);
@@ -215,7 +215,7 @@
             // 
             // btn9
             // 
-            this.btn9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn9.BackColor = System.Drawing.Color.SteelBlue;
             this.btn9.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.Location = new System.Drawing.Point(130, 109);
             this.btn9.Margin = new System.Windows.Forms.Padding(1);
@@ -228,7 +228,7 @@
             // 
             // btn0
             // 
-            this.btn0.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn0.BackColor = System.Drawing.Color.SteelBlue;
             this.btn0.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.Location = new System.Drawing.Point(10, 252);
             this.btn0.Margin = new System.Windows.Forms.Padding(1);
@@ -241,7 +241,7 @@
             // 
             // btnPonto
             // 
-            this.btnPonto.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPonto.BackColor = System.Drawing.Color.SteelBlue;
             this.btnPonto.Font = new System.Drawing.Font("Lucida Console", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPonto.Location = new System.Drawing.Point(130, 252);
             this.btnPonto.Margin = new System.Windows.Forms.Padding(1);
@@ -296,8 +296,7 @@
             // 
             // txbTela
             // 
-            this.txbTela.BackColor = System.Drawing.Color.MidnightBlue;
-            this.txbTela.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbTela.BackColor = System.Drawing.Color.DarkBlue;
             this.txbTela.Font = new System.Drawing.Font("DS-Digital", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTela.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.txbTela.Location = new System.Drawing.Point(10, 7);
@@ -354,7 +353,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuText;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(317, 304);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btnQuadrado);
